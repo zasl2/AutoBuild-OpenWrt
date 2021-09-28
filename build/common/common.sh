@@ -30,7 +30,7 @@ find . -name 'luci-app-netdata' -o -name 'netdata' -o -name 'luci-theme-argon' |
 
 git clone https://github.com/gd0772/package package/gd772
 wget https://raw.githubusercontent.com/zasl2/AutoBuild-OpenWrt/main/n1.sh
-bash x86.sh
+bash n1.sh
 
 if [[ "${Modelfile}" == "Lede_source" ]]; then
 	sed -i '/IMAGES_GZIP/d' "${PATH1}/${CONFIG_FILE}" > /dev/null 2>&1
