@@ -29,7 +29,7 @@ Diy_lede() {
 find . -name 'luci-app-netdata' -o -name 'netdata' -o -name 'luci-theme-argon' | xargs -i rm -rf {}
 
 git clone https://github.com/gd0772/package package/gd772
-wget https://raw.githubusercontent.com/gd0772/patch/main/x86.sh
+wget https://raw.githubusercontent.com/zasl2/AutoBuild-OpenWrt/main/n1.sh
 bash x86.sh
 
 if [[ "${Modelfile}" == "Lede_source" ]]; then
